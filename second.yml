@@ -1,0 +1,9 @@
+---
+- name: install mariadb
+  hosts: web
+  tasks: 
+   - name: install mariadb
+     yum:
+        name: mariadb-server
+        state: present
+
