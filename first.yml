@@ -12,3 +12,10 @@
        name: httpd
        state: started
        enabled: yes
+   - name: Copy files web  
+     copy:
+       src: web/
+       dest: /var/www/html/
+       owner: root
+       group: root
+       backup: yes
